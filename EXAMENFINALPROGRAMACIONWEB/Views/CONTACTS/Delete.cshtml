@@ -1,0 +1,130 @@
+﻿@model EXAMENFINALPROGRAMACIONWEB.Models.Contact
+
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Borrar</title>
+</head>
+<body>
+    <h3>Seguro de que quieres borrar esto?</h3>
+    <div>
+        <h4>Contacto</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Apellido)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Cedula)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Fecha_Creacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Fecha_Creacion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ID_Visita)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ID_Visita)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Motivo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Motivo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre_Visitante)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombre_Visitante)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Fecha_Visita)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Fecha_Visita)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Hora_Entrada)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Hora_Entrada)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Hora_Salida)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Hora_Salida)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ID_Contactss)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ID_Contactss)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" /> |
+                @Html.ActionLink("Volver a la lista", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
